@@ -20,16 +20,16 @@
       </table>
   </div>
   <div class="col-md-4">
-        <form action="">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="" class="form-control">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="" class="form-control">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="" class="form-control">
         
-          <button class="btn btn-success mt-2">Add</button>
-        </form>
+          <label for="name">Name</label>
+          <input type="text" [(ngModel)]="selectedClient.name" class="form-control">
+          <label for="email">Email</label>
+          <input type="email" [(ngModel)]="selectedClient.email" class="form-control">
+          <label for="password">User Type</label>
+          <input type="text"[(ngModel)]="selectedClient.userTypeId" class="form-control">
+        
+          <button class="btn btn-success mt-2" (click)="addOrEdit()">Add</button>
+        
   </div>
 </div>
 
