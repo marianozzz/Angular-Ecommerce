@@ -17,6 +17,10 @@ export class ClientsListComponent implements OnInit {
     password: '123',
   }];
 selectedClient: Client = new Client();
+constructor() { }
+
+ngOnInit(): void {
+}
 
 addOrEdit()
 {
@@ -24,9 +28,6 @@ addOrEdit()
   this.clientArray.push(this.selectedClient);
   this.selectedClient = new Client();
 }
-  constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

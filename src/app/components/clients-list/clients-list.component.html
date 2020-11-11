@@ -10,7 +10,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let client of clientArray">
+          <tr *ngFor="let client of clientArray" [class.active]="client == selectedClient">
             <td>{{client.userId}}</td>
             <td>{{client.userTypeId}}</td>
             <td>{{client.name}}</td>
@@ -27,7 +27,6 @@
           <input type="email" [(ngModel)]="selectedClient.email" class="form-control">
           <label for="password">User Type</label>
           <input type="text"[(ngModel)]="selectedClient.userTypeId" class="form-control">
-        
           <button class="btn btn-success mt-2" (click)="addOrEdit()">Add</button>
         
   </div>
