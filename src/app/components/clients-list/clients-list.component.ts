@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Client} from '../../models/client';
+import { ClientServiceService } from 'src/app/services/client-service.service';
 
 @Component({
   selector: 'app-clients-list',
@@ -8,26 +9,20 @@ import {Client} from '../../models/client';
 })
 export class ClientsListComponent implements OnInit {
 
-  clientArray: Client[] =
- [{
-    userId: 1,
-    userTypeId: 1,
-    name: 'Jhon',
-    email: 'jhonDoe@gmail.com',
-    password: '123',
-  }];
-selectedClient: Client = new Client();
-constructor() { }
+  clientArray: Array <Client> = [];
+
+constructor(private clientService: ClientServiceService) { }
 
 ngOnInit(): void {
+  this.clientArray = this.clientService.getAll();
 }
-
+/*
 addOrEdit()
 {
   this.selectedClient.userId = this.clientArray.length + 1;
   this.clientArray.push(this.selectedClient);
   this.selectedClient = new Client();
-}
+}*/
 
 
 }
