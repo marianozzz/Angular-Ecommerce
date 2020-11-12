@@ -7,6 +7,7 @@
             <th scope="col">User Type</th>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
+            <th scope="col">Detail</th>
           </tr>
         </thead>
         <tbody>
@@ -15,19 +16,14 @@
             <td>{{client.userTypeId}}</td>
             <td>{{client.name}}</td>
             <td>{{client.email}}</td>
+            <td><a class="btn btn-success" [routerLink] ="['/view/' , client.userId]" >view detail</a></td>
           </tr>
         </tbody>
       </table>
   </div>
   <div class="col-md-4">
         
-          <label for="name">Name</label>
-          <input type="text" class="form-control">
-          <label for="email">Email</label>
-          <input type="email"  class="form-control">
-          <label for="password">User Type</label>
-          <input type="text" class="form-control">
-          <button class="btn btn-success mt-2">Add</button>
+         <app-add-client></app-add-client>
         
   </div>
 </div>

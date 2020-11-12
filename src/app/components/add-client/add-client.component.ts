@@ -31,7 +31,7 @@ export class AddClientComponent implements OnInit {
 
     this.clientService.add(client);
 
-    this.message =" Client successfully added";
+    this.message = '<div class="form-control alert alert-success"> Client successfully added</div>';
   }
 
 }

@@ -9,6 +9,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
 import { ClientsListComponent } from './components/clients-list/clients-list.component';
 import { AddClientComponent } from './components/add-client/add-client.component';
+import { ViewComponent } from './components/view/view.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { AddClientComponent } from './components/add-client/add-client.component
     ProductsListComponent,
     ClientsListComponent,
     AddClientComponent,
+    ViewComponent,
   ],
   imports: [
     BrowserModule,
