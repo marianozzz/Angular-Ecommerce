@@ -10,12 +10,17 @@ import { ClientServiceService} from 'src/app/services/client-service.service';
 })
 export class ViewComponent implements OnInit {
    client: Client = new Client();
-  
+
   constructor(private clientService: ClientServiceService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    let clientId = Number(this.route.snapshot.paramMap.get('id'));
-    this.client = this.clientService.getById(clientId);
+
+       this.clientService.getById(this.client.userId).then(response => {
+       this.client = response;
+    })
+      .catch(error => { });
+  /*  let clientId = Number(this.route.snapshot.paramMap.get('id'));
+    this.client = this.clientService.getById(clientId);*/
   }
 
 }

@@ -16,14 +16,13 @@ export class AddClientComponent implements OnInit {
   password: string;
   message: string;
 
-  constructor(private clientService : ClientServiceService) { }
+  constructor(private clientService: ClientServiceService) { }
 
   ngOnInit(): void {
   }
 
   addClient(){
     let client = new Client();
-  
     client.name = this.name;
     client.email = this.email;
     client.userId = this.userTypeId;

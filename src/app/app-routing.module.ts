@@ -5,11 +5,13 @@ import {ClientsListComponent} from './components/clients-list/clients-list.compo
 import {ProductsListComponent} from './components/products-list/products-list.component';
 import {AddClientComponent } from './components/add-client/add-client.component';
 import {ViewComponent } from './components/view/view.component';
+import { AddProductComponent } from './components/add-product/add-product.component';
 
 const routes: Routes = [
   { path: 'clients', component: ClientsListComponent },
   { path: '', component: ProductsListComponent },
   { path: 'add', component: AddClientComponent},
+  { path: 'addproduct', component: AddProductComponent },
   { path: 'view/:id', component: ViewComponent},
 
 ];
