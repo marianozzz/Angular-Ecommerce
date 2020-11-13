@@ -9,7 +9,8 @@ import { ClientServiceService} from 'src/app/services/client-service.service';
   styleUrls: ['./view.component.css']
 })
 export class ViewComponent implements OnInit {
-  private client: Client = new Client();
+   client: Client = new Client();
+  
   constructor(private clientService: ClientServiceService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {

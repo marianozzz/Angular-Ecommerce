@@ -14,7 +14,7 @@ export class AddClientComponent implements OnInit {
   name: string;
   email: string;
   password: string;
-  message : string;
+  message: string;
 
   constructor(private clientService : ClientServiceService) { }
 
