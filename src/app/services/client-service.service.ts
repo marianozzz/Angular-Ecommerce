@@ -15,14 +15,14 @@ export class ClientServiceService {
   constructor(private https: HttpClient) { }
 /* Agregar cliente */
 
-  add(client: Client)
+  add(client: Client): Promise<any>
   {
    const httpOpcions = {
      headers: new HttpHeaders({
        'Content-type': 'application/json'
      })
    };
-   return this.https.post(this.apiURL, client, httpOpcions);
+   return this.https.post(this.apiURL, client, httpOpcions).toPromise();
   }
 
 
