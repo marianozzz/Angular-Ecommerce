@@ -4,11 +4,13 @@ import { from } from 'rxjs';
 import {ClientsListComponent} from './components/clients-list/clients-list.component';
 import {ProductsListComponent} from './components/products-list/products-list.component';
 import {AddClientComponent } from './components/add-client/add-client.component';
+import {ViewComponent } from './components/view/view.component';
 
 const routes: Routes = [
   { path: 'clients', component: ClientsListComponent },
   { path: '', component: ProductsListComponent },
   { path: 'add', component: AddClientComponent},
+  { path: 'view/:id', component: ViewComponent},
 
 ];
 
@@ -17,5 +19,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-// https://www.youtube.com/watch?v=fpZAkZvtI9k&list=PLHgpVrCyLWApLDoezmOfrUXb-IMoDs5Ls&index=31
-//https://www.youtube.com/watch?v=arGRTVdG--c

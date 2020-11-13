@@ -23,15 +23,15 @@ export class AddClientComponent implements OnInit {
 
   addClient(){
     let client = new Client();
-    client.userId;
+  
     client.name = this.name;
-    client.email = this.password;
+    client.email = this.email;
     client.userId = this.userTypeId;
     client.password = this.password;
 
     this.clientService.add(client);
 
-    this.message = '<div class="form-control alert alert-success"> Client successfully added</div>';
+    this.message = '<div class="form-control alert alert-success"> Client successfully added </div>';
   }
 
 }
