@@ -15,6 +15,7 @@ import { AddProductComponent } from './components/add-product/add-product.compon
 import { LoginComponent } from './components/login/login.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
