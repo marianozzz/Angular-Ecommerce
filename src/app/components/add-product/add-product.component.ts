@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Product } from 'src/app/models/product';
-import { ProductServiceService } from 'src/app/services/product-service.service';
+import { ProductService } from 'src/app/services/product-service';
 
 @Component({
   selector: 'app-add-product',
@@ -16,7 +16,7 @@ export class AddProductComponent implements OnInit {
       price: new FormControl('', [Validators.required]),
       category: new FormControl('', [Validators.required])
   });
-  constructor(private productService: ProductServiceService) { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
 

@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductServiceService {
+export class ProductService {
 
   private apiURL = 'https://utn-avanzada2-tp-final.herokuapp.com/api/Product';
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Client } from 'src/app/models/client';
-import { ClientServiceService} from 'src/app/services/client-service.service';
+import { ClientService} from 'src/app/services/client-service';
 
 @Component({
   selector: 'app-add-client',
@@ -16,7 +16,7 @@ export class AddClientComponent implements OnInit {
   password: string;
   message: string;
 
-  constructor(private clientService: ClientServiceService) { }
+  constructor(private clientService: ClientService) { }
 
   ngOnInit(): void {
   }

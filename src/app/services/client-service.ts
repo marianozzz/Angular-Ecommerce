@@ -7,7 +7,7 @@ import {Client} from '../models/client';
 @Injectable({
   providedIn: 'root'
 })
-export class ClientServiceService {
+export class ClientService {
 
  // private clientList = new Array<Client>();
  // private clientId = 0;
