@@ -6,8 +6,10 @@ import {ProductsListComponent} from './components/products-list/products-list.co
 import {AddClientComponent } from './components/add-client/add-client.component';
 import {ViewComponent } from './components/view/view.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
   { path: 'clients', component: ClientsListComponent },
   { path: '', component: ProductsListComponent },
   { path: 'add', component: AddClientComponent},

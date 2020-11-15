@@ -12,6 +12,7 @@ import { ClientsListComponent } from './components/clients-list/clients-list.com
 import { AddClientComponent } from './components/add-client/add-client.component';
 import { ViewComponent } from './components/view/view.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { AddProductComponent } from './components/add-product/add-product.compon
     AddClientComponent,
     ViewComponent,
     AddProductComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
