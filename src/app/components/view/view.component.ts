@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Client } from 'src/app/models/client';
-import { ClientServiceService} from 'src/app/services/client-service.service';
+import { ClientService} from 'src/app/services/client-service';
 
 @Component({
   selector: 'app-view',
@@ -11,7 +11,7 @@ import { ClientServiceService} from 'src/app/services/client-service.service';
 export class ViewComponent implements OnInit {
    client: Client = new Client();
 
-  constructor(private clientService: ClientServiceService, private route: ActivatedRoute) { }
+  constructor(private clientService: ClientService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
 
