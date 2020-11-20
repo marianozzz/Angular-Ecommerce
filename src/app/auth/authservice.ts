@@ -18,7 +18,7 @@ export class AuthService {
   login(loginCredential: LoginCredentials): Promise<any> {
       const httpOptions = {
         headers: new HttpHeaders({
-          'Content-Type' : 'aplication/json'
+          'Content-Type': 'application/json'
         })
       };
       const promise = this.http.post(this.loginUrl, loginCredential, httpOptions).toPromise();
